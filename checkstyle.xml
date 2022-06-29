@@ -45,7 +45,6 @@
             <property name="checks" value="HideUtilityClassConstructor"/>
             <property name="query"
                       value="//*[MODIFIERS//*[@text = 'UtilityClass' or @text='NoArgsConstructor' or @text = 'SpringBootApplication']]/descendant-or-self::node()"/>
-                        <property name="query"
         </module>
         <!-- Ignore HideUtilityClassConstructor for Hooks classes -->
         <module name="SuppressionXpathSingleFilter">
