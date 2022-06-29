@@ -47,7 +47,7 @@
                       value="//*[MODIFIERS//*[@text = 'UtilityClass' or @text='NoArgsConstructor' or @text = 'SpringBootApplication']]/descendant-or-self::node()"/>
         </module>
         <!-- Ignore HideUtilityClassConstructor for Hooks classes -->
-        <module name="SuppressionXpathSingleFilterHooks">
+        <module name="SuppressionXpathSingleFilter">
             <property name="checks" value="HideUtilityClassConstructor"/>
             <property name="query"
                       value="//CLASS_DEF[@text='Hooks' or @text='SapHooks' or @text='ProjectHooks']"/>
