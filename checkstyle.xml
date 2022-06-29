@@ -45,13 +45,15 @@
             <property name="checks" value="HideUtilityClassConstructor"/>
             <property name="query"
                       value="//*[MODIFIERS//*[@text = 'UtilityClass' or @text='NoArgsConstructor' or @text = 'SpringBootApplication']]/descendant-or-self::node()"/>
+                        <property name="query"
+                      value="//CLASS_DEF[@text='Hooks' or @text='SapHooks' or @text='ProjectHooks']"/>
         </module>
         <!-- Ignore HideUtilityClassConstructor for Hooks classes -->
-        <module name="SuppressionXpathSingleFilter">
-            <property name="checks" value="HideUtilityClassConstructor"/>
-            <property name="query"
-                      value="//CLASS_DEF[@text='Hooks' or @text='SapHooks' or @text='ProjectHooks']"/>
-        </module>  
+<!--         <module name="SuppressionXpathSingleFilter"> -->
+<!--             <property name="checks" value="HideUtilityClassConstructor"/> -->
+<!--             <property name="query" -->
+<!--                       value="//CLASS_DEF[@text='Hooks' or @text='SapHooks' or @text='ProjectHooks']"/> -->
+<!--         </module>   -->
         <module name="InterfaceIsType"/>
         <module name="OneTopLevelClass"/>
         <module name="VisibilityModifier"/>
