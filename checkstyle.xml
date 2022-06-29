@@ -55,6 +55,11 @@
         <module name="InterfaceIsType"/>
         <module name="OneTopLevelClass"/>
         <module name="VisibilityModifier"/>
+        <module name="SuppressionXpathSingleFilter">
+            <property name="checks" value="VisibilityModifier"/>
+            <property name="query"
+                      value="//*[MODIFIERS//*[@text = 'Steps']]/descendant-or-self::node()"/>
+        </module>  
         <!-- Coding -->
         <module name="CovariantEquals"/>
         <module name="DeclarationOrder"/>
